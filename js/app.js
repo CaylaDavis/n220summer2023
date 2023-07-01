@@ -13,7 +13,7 @@ function setup() {
     triangle(startX, 300, 400,200, 600, 300);
    
     fill(royal);
-    rect(450,400,100,100);
+    square(450,400,100)
     
     fill(151, 52, 250);
     rect(300,400,100,200);
