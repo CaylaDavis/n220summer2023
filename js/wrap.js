@@ -13,7 +13,7 @@ function draw() {
     xPos = xPos + 5; 
 
     if (xPos > width + radius ){
-        x = -radius
+        xPos = -radius
 
     }
         
