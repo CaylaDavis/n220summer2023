@@ -9,7 +9,7 @@ let movies = [
 
 function changeBackground(){
     if (movies[i].rating > 8)
-    dvmoviesDiv.style.backgroundColor = "#6cf542"
+    moviesDiv.style.backgroundColor = "#6cf542"
 }
 
 
@@ -21,7 +21,7 @@ for(let i = 0; i < movies.length; i++){
 
     function changeBackground(){
         if (movies[i].rating > 8)
-        dvmoviesDiv.style.backgroundColor = "#6cf542"
+        moviesDiv.style.backgroundColor = "#6cf542"
 
     }
 }

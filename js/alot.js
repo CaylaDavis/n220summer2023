@@ -1,20 +1,22 @@
-let dvSquare = document.getElementsById("squareimage");
-//reference HTML element 
 
+
+showMe();
 function randomColor() {
-     r = randomInteger(255);
-     g = randomInteger(255);
-     b = randomInteger(255);
+     r = Math.floor(Math.random() * 255);
+     g = Math.floor(Math.random() * 255);
+     b =Math.floor(Math.random() * 255);
      rgbColor = "rgb(" + r + "," + g + "," + b + ")";
 
-    return [r,g,b];
+    return rgbColor;
 }
-function draw(){
+function showMe(){
+    console.log("gvhjbjhn")
     for(var i=0; i<100; i++){
-        dvSquare.style.backgroundColor = rgbColor;
+        let dvSquare = document.createElement(("div"))
+        dvSquare.style.backgroundColor = randomColor();
         dvSquare.style.height = "20px";
         dvSquare.style.width = "20px"; 
         dvSquare.style.float = "left";
         document.body.appendChild(dvSquare);
-}
+    }
 }
