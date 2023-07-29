@@ -5,10 +5,9 @@ about = [ "There are weekly videos to teach the concepts related to interactive 
 assignments = ["The assignments are excercies based on the week's video"]
 
 
-function showInfo1 = 
-
-
-function showInfo2 = 
- 
-
-function showInfo3 = 
+function showInfo() {
+    myArray.forEach {
+        document.getElementById('result').innerHTML +=`<div>${el}</div><br />`;
+        // here result is the id of the div present in the dom
+    }
+};
