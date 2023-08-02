@@ -16,6 +16,9 @@ function averageSum (){
         //subsequent numbers are added to the value of previous numbers added together 
         //+= add and assigns the new value to the variable sum 
     }
+
+
+
     let average = sum / splitArray.length 
     //average is the sum divided by the amount of numbers
     console.log(average)

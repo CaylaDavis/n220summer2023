@@ -12,7 +12,6 @@ let objects = [
 
 function showMe(){
     for(var i=0; i<objects.length; i++){
-        console.log(objects[i].color)
         let dvSquare = document.createElement(("div"))
         dvSquare.style.backgroundColor = objects[i].color
         dvSquare.style.height = objects[i].height + "px";
