@@ -17,7 +17,7 @@ function wordCheck() {
                     answerDiv.innerHTML = " There are " + count + " bad words in this statement" 
                 }
                 else{
-                    answerDiv.innerHTML = "There are no bad words in this statement"
+                answerDiv.innerHTML = "There are no bad words in this statement"
                 }
 
             }
