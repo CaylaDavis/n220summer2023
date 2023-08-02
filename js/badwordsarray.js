@@ -3,13 +3,16 @@ let answerDiv = document.getElementById("answer")
 
 badwords = ["clear", "water", "tires"]
 count = 0
-function wordCheck() {
-    let myArray = sentence.value;
-    let splitArray = myArray.split(" ");
-    let lookingFor = badwords
-    let count = 0;
-    for (let i = 0; i < lookingFor.length; i++) {
-        for(let n = 0; n < splitArray.length; n++) {
+let myArray = sentence.value;
+let splitArray = myArray.split(" ");
+let result = splitArray.filter(wordCheck(words));
+
+function wordCheck () {
+    words = 0;
+    nameBadwords = splitArray.filter(words) => filter.includes(badwords)
+
+
+    
             count = 0
             if(lookingFor[i] == splitArray[n]) {
                 count++
