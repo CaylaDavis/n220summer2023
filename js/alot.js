@@ -1,11 +1,10 @@
 
-
-showMe();
 function randomColor() {
      r = Math.floor(Math.random() * 255);
      g = Math.floor(Math.random() * 255);
      b =Math.floor(Math.random() * 255);
      rgbColor = "rgb(" + r + "," + g + "," + b + ")";
+     console.log(rgbColor)
 
     return rgbColor;
 }
@@ -19,4 +18,6 @@ function showMe(){
         dvSquare.style.float = "left";
         document.body.appendChild(dvSquare);
     }
-}
+} 
+
+ showMe();
