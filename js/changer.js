@@ -10,7 +10,7 @@ styles = {
 let squareDiv1 = document.getElementById("square1")
 //reference to HTML element 
 Object.assign(squareDiv1.style, styles )
-//merge specified styles with existing styles in the style attribute 
+//take specified style values from the style variable and copy them to a target object 
 squareDiv1.addEventListener("click", itsClicked) 
 // create an event listener that will make the div invoke itsClicked function when clicked 
 
@@ -25,7 +25,7 @@ squareDiv3.addEventListener("click", itsClicked)
 function itsClicked(event) {
 //function that is invoked when event (click) is done by yser
     let color = event.target.getAttribute("data-color");
-    //store the attribute of color,specified using data-color in HTML elements
+    //store the customized attribute of color(specified using data-color in HTML elements)
     event.target.style.backgroundColor = color;
-    //change background color to color specified in the element by customed attribute 
+    //change background color to customized attribute 
 }
