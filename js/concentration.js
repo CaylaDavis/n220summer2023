@@ -1,6 +1,5 @@
-cardDivs = document.querySelector(".cards")
-//reference HTML element by its class 
-
+cardDivs = document.getElementById("cards")
+//reference HTML element using its' id 
 
 cardValues = ["1","1","2","2","3","3","4","4","5","5","6","6","7","7","8","8"];
 //array that holds all the variables that will be displayed on the cards 
@@ -18,18 +17,23 @@ clickedCard = []
 function assignValue (){
     for (let i = 0; i < cardValues.length; i++) { 
     //for the length of the card values array 
-        cardAssignment = document.createElement("div")
+        let cardAssignment = document.createElement("div")
         //create an element 
-        card.setAttribute("data-id", i)
+        cardAssignment.style.width = "250px";
+        cardAssignment.style.height = "350px";
+        cardAssignment.style.backgroundColor = "#012d73";
+        cardAssignment.style.margin = "5px";
+        cardAssignment.setAttribute("data-id", i)
         //give each element a unique id of 0-16
-        card.setAttribute("data-value", randomValue)
+        cardAssignment.setAttribute("data-value", randomValue)
         //give each card a value from the cardValue array 
-        card.addEventListener("click", flipCard)
+        cardAssignment.addEventListener("click", flipCard)
         //event listener that will make divs invoke flipCard function when clicked 
-        cardDivs.appendChild("cards")
+        cardDivs.appendChild(cardAssignment)
+     }
+ }   
 
-    }
-}
+assignValue();
 function flipCard () {
     cardId = this.getAttribute("data-id")
     clickedCard.push(cardValues[cardId].name)
